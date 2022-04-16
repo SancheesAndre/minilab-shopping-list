@@ -1,54 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css"
-      integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We"
-      crossorigin="anonymous"
-    />
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
-      integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css"
+    integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous" />
 
-    <link rel="stylesheet" type="text/css" href="./assets/styles/index.css" />
-    <title>Lista de compras</title>
-  </head>
-  <body>
-    <div class="container mt-5">
-      <div class="row d-flex justify-content-center">
-        <div class="col-6">
-          <h1 class="mb-5">
-            <i class="fas fa-shopping-basket"></i> Lista de compras
-          </h1>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-          <ul id="ul" class="list-group">
-            <li class="list-group-item d-flex justify-content-between">
-              Banana <button class="btn btn btn-danger">-</button>
-            </li>
-            <li class="list-group-item d-flex justify-content-between">
-              Pão <button class="btn btn btn-danger">-</button>
-            </li>
-            <li class="list-group-item d-flex justify-content-between">
-              Acúcar <button class="btn btn btn-danger">-</button>
-            </li>
-            <li class="list-group-item d-flex justify-content-between">
-              Café <button class="btn btn btn-danger">-</button>
-            </li>
-          </ul>
+  <link rel="stylesheet" type="text/css" href="./assets/styles/index.css" />
+  <title>Lista de compras</title>
+</head>
+
+<body>
+  <div class="container mt-5">
+    <div class="row d-flex justify-content-center">
+      <div class="col-6">
+        <h1 class="mb-5">
+          <i class="fas fa-shopping-basket"></i> Lista de compras
+        </h1>
+
+        <ul id="ul" class="list-group">
+          <li class="list-group-item d-flex justify-content-between">
+            Banana <button class="btn btn-remove btn-danger">-</button>
+          </li>
+          <li class="list-group-item d-flex justify-content-between">
+            Pão <button class="btn btn-remove btn-danger">-</button>
+          </li>
+          <li class="list-group-item d-flex justify-content-between">
+            Acúcar <button class="btn btn-remove btn-danger">-</button>
+          </li>
+          <li class="list-group-item d-flex justify-content-between">
+            Café <button class="btn btn-remove btn-danger">-</button>
+          </li>
+        </ul>
+        <div class="new-content d-flex justify-content-between">
+          <input type="text" name="new-item" id="new-item" placeholder="Digite o novo item">
+          <button id="btn-add-item" class="btn btn-primary">+</button>
         </div>
       </div>
     </div>
+  </div>
 
-    <script src="./assets/scripts/index.js"></script>
-  </body>
+  <script src="./assets/scripts/index.js"></script>
+</body>
+
 </html>
